@@ -30,5 +30,5 @@ Used with Transmitter, receives commands and runs them. Run on startup.
 ### AI Installer
 Installs a program that listens to a pastebin page (https://pastebin.com/XDXyGBBW) and runs any commands on it, so that remote connection is possible. Could be repurposed, but I don't care that much.
 ```
-
+wget run https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/AIinstaller.lua
 ```
