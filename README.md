@@ -21,8 +21,8 @@ Used with Transmitter, receives commands and runs them. Run on startup.
 
 ```
 
-### Mirror
-Mirrors the screen to an attached monitor.
+### Chatty
+**Requires Adv. Peripherals.** Mirrors the in-game chat into the computer.
 ```
 
 ```
