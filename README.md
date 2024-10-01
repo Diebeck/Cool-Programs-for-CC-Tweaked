@@ -24,7 +24,7 @@ wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs
 ### Chatty
 *Requires Adv. Peripherals.* Mirrors the in-game chat into the computer.
 ```
-
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/chatty.lua
 ```
 
 ### AI Installer
