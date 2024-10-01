@@ -6,7 +6,7 @@ Each file is a program, and should be installed using the guide below. (Some fil
 ### Mirror
 Mirrors the screen to an attached monitor.
 ```
-
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/mirror.lua
 ```
 
 ### Transmitter
