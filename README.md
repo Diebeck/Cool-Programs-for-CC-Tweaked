@@ -22,7 +22,7 @@ Used with Transmitter, receives commands and runs them. Run on startup.
 ```
 
 ### Chatty
-**Requires Adv. Peripherals.** Mirrors the in-game chat into the computer.
+*Requires Adv. Peripherals.* Mirrors the in-game chat into the computer.
 ```
 
 ```
