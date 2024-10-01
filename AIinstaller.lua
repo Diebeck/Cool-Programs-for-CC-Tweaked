@@ -26,7 +26,8 @@ print("")
 print("Thank you for installing AI!")
 textutils.slowPrint("Finalizing........",5)
 
-shell.run("pastebin get BnfGbAQ9 startup.lua")
+--The command below installs AIlink.lua
+shell.run("wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/AIlink.lua startup.lua")
 shell.run("wget","https://cloud-catcher.squiddev.cc/cloud.lua")
 
 --haha funny text go brr
