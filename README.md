@@ -27,8 +27,8 @@ Used with Transmitter, receives commands and runs them. Run on startup.
 
 ```
 
-### CC Link Installer
-Installs CC Link, a program that listens to a specific pastebin page and runs any commands on it.
+### AI Installer
+Installs a program that listens to a specific pastebin page and runs any commands on it. Primarily used to "install an AI". Could be repurposed, but I don't care that much.
 ```
 
 ```
