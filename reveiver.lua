@@ -1,6 +1,6 @@
 term.clear()
 term.setCursorPos(1,1)
-print("AI STARTUP INICIATED")
+print("RECEIVING INSTRUCTIONS")
 print("This is computer [ "..os.getComputerID().." ]")
 print("Terminate the program for manual startup.")
 print("Please wait...")
