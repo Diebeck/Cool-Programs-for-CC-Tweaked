@@ -6,6 +6,6 @@ print("Terminate the program for manual startup.")
 print("Please wait...")
 
 rednet.open("top")
-local _, message = rednet.receive("AI")
+local _, message = rednet.receive("run")
 print(message[1])
 shell.run(table.unpack(message))
