@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs
 ### Receiver
 Used with Transmitter, receives commands and runs them. Run on startup.
 ```
-
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/receiver.lua startup.lua
 ```
 
 ### Chatty
