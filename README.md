@@ -5,11 +5,24 @@ Each file is a program, and should be installed using the guide below. (Some fil
 
 ### Mirror
 Mirrors the screen to an attached monitor.
+```
 
+```
 
 ### Transmitter
 Used with Receiver, transmits commands to a target computer.
+```
 
+```
 
 ### Receiver
 Used with Transmitter, receives commands and runs them. Run on startup.
+```
+
+```
+
+### Mirror
+Mirrors the screen to an attached monitor.
+```
+
+```
