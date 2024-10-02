@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs
 ### Transmitter
 Used with Receiver, transmits commands to a target computer.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/transmitter.lua send
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/transmitter.lua transmit.lua
 ```
 
 ### Receiver
