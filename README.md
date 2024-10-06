@@ -1,9 +1,13 @@
 # Cool-Programs-for-CC-Tweaked
 A collection of cool programs for the Minecraft mod CC: Tweaked
 
+Most of these are my creation, only a few are made by other people, given credit and catalogued.
+
 Each file is a program, and should be installed using the guide below. (Some files may need to be installed with different names)
 
 ### Mirror
+Credit:
+
 Mirrors the screen to an attached monitor.
 ```
 wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/mirror.lua
@@ -23,6 +27,7 @@ wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs
 
 ### Simple GPS on Startup
 Used for setting up a GPS system that doesnt need to be reset.
+
 Run "edit startup.lua" and set the x, y, z of the computer.
 ```
 wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/simpleGPSonStartup.lua startup.lua
