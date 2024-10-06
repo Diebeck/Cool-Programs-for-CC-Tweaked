@@ -21,6 +21,12 @@ Used with Transmitter, receives commands and runs them. Run on startup.
 wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/receiver.lua startup.lua
 ```
 
+### Simple GPS on Startup
+Used for setting up a GPS system that doesnt need to be reset.
+```
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/simpleGPSonStartup.lua startup.lua
+```
+
 ### Chatty
 *Requires Adv. Peripherals.* Mirrors the in-game chat into the computer.
 ```
