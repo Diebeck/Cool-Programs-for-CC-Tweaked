@@ -23,6 +23,7 @@ wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs
 
 ### Simple GPS on Startup
 Used for setting up a GPS system that doesnt need to be reset.
+Run "edit startup.lua" and set the x, y, z of the computer.
 ```
 wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/simpleGPSonStartup.lua startup.lua
 ```
