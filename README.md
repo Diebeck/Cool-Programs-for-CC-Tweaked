@@ -6,7 +6,7 @@ Most of these are my creation, only a few are made by other people, given credit
 Each file is a program, and should be installed using the guide below. (Some files may need to be installed with different names)
 
 ### Mirror
-Credit:
+Credit: Wojbies
 
 Mirrors the screen to an attached monitor.
 ```
