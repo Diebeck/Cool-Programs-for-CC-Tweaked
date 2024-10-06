@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/head
 ```
 
 ### Holoplayer Server
-*Requires Adv. Peripherals* Utilizes a player detector to get everyone's position, displaying them near the turtle. Privacy is a myth.
+*Requires Adv. Peripherals.* Utilizes a player detector to get everyone's position, displaying them near the turtle. Privacy is a myth.
 ```
 https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayerServer.lua
 ```
