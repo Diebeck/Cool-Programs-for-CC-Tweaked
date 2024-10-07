@@ -2,6 +2,7 @@ local p = peripheral.find("playerDetector")
 if p == nil then
     error("No player detector found!")
 end
+peripheral.find("modem", rednet.open)
 
 term.clear()
 term.setCursorPos(1,1)
