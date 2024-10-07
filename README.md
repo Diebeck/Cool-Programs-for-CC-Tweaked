@@ -54,11 +54,11 @@ wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs
 ### Holoplayer
 Program for pocket computers to broadcast their position at all times. BSTOR makes use of it and displays players near the turtle.
 ```
-https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayer.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayer.lua
 ```
 
 ### Holoplayer Server
 *Requires Adv. Peripherals.* Utilizes a player detector to get everyone's position, displaying them near the turtle. Privacy is a myth.
 ```
-https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayerServer.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayerServer.lua
 ```
