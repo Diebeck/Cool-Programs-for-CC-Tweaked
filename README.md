@@ -46,9 +46,15 @@ wget run https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/
 ```
 
 ### BSTOR
-A very versatile program for turtles to explore and interact with the world.
+A very versatile program for turtles to explore and interact with the world remotely.
 ```
 wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/bstor_v5.lua bstor.lua
+```
+
+### INVMAN
+A very useful program for turtles to manage their inventory and other attached inventories remotely.
+```
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/invman_v1.lua invman.lua
 ```
 
 ### Holoplayer
