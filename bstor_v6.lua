@@ -1,6 +1,9 @@
 -- BSTOR Program made by Diebeck
 -- Dont touch my shit unless you know what you're doing!!!
 
+term.setBackgroundColour(colors.black)
+term.clear()
+
 local blocks = {}
 if fs.exists(".blockdata") then
   local file = fs.open(".blockdata","r")
@@ -55,6 +58,7 @@ local gettingAsked = 0
 local detecting = true
 local players = {}
 local modemEquipped = false
+local doDir = "mid"
 
 -- Functions
 
@@ -343,10 +347,22 @@ local function checkClicks()
       slotn = (slotn - 1) % 16
     elseif x == 18 and y == 7 then
       slotn = (slotn + 1) % 16
-    elseif x == 15 and y == 9 then
-      turtle.drop(slotAmount)
     elseif x == 16 and y == 9 then
-      turtle.suck(slotAmount)
+      if doDir == "up" then
+        turtle.dropUp(slotAmount)
+      elseif doDir == "mid" then
+        turtle.drop(slotAmount)
+      elseif doDir == "down" then
+        turtle.dropDown(slotAmount)
+      end
+    elseif x == 17 and y == 9 then
+      if doDir == "up" then
+        turtle.suckUp(slotAmount)
+      elseif doDir == "mid" then
+        turtle.suck(slotAmount)
+      elseif doDir == "down" then
+        turtle.suckDown(slotAmount)
+      end
     elseif x == 20 and y == 7 then
       if slotAmount == 1 then
         slotAmount = 64
@@ -364,18 +380,28 @@ local function checkClicks()
           c.reboot()
         end
       end
-    elseif x == 18 and y == 9 then
-      turtle.equipLeft()
     elseif x == 19 and y == 9 then
+      turtle.equipLeft()
+    elseif x == 20 and y == 9 then
       turtle.equipRight()
-    elseif x == 21 and y == 9 then
+    elseif x == 22 and y == 9 then
       if detecting then
         detecting = false
       else
         detecting = true
       end
-    elseif x == 22 and y == 9 then
+    elseif x == 23 and y == 9 then
       geoScan()
+    elseif x == 15 and y == 9 then
+      if doDir == "up" then
+        doDir = "mid"
+      elseif doDir == "mid" then
+        doDir = "down"
+      elseif doDir == "down" then
+        doDir = "up"
+      end
+    elseif x == 25 and y == 9 then
+      
     end
   end
 end
@@ -458,11 +484,20 @@ local function drawData()
     term.setCursorPos(21,7)
     term.write(slotAmount)
 
-    term.setCursorPos(21,9)
+    term.setCursorPos(22,9)
     if detecting then
       term.blit("D","7","d")
     else
       term.blit("D","7","e")
+    end
+
+    term.setCursorPos(15,9)
+    if doDir == "up" then
+      term.blit("\30","f","4")
+    elseif doDir == "mid" then
+      term.blit("\4","f","4")
+    elseif doDir == "down" then
+      term.blit("\31","f","4")
     end
 
     term.setCursorPos(15,6)
@@ -743,6 +778,16 @@ local function autodetect()
   end
 end
 
+--doEnd
+local function doEnd()
+  while true do
+    local _, _, x, y = os.pullEvent("mouse_click")
+    if x == 25 and y == 9 then
+      return nil
+    end
+  end
+end
+
 --debug
 local function debug()
   while true do
@@ -781,7 +826,9 @@ term.setCursorPos(15,3)
 term.blit(" \25  \31 \31 \187","ffffffff3","000fef5ff")
 term.setCursorPos(15,7)
 term.blit("\27  \26 x","000007","fffff0")
-term.setCursorPos(15,9)
-term.blit("\25\24 LR  G","77777777","00f00ff0")
+term.setCursorPos(16,9)
+term.blit("\25\24 LR  G \18","7777777777","00f00ff0f1")
 
-parallel.waitForAll(save, drawData, drawBlocks, checkClicks, checkKeys, coolName, addPlayers, checkModem, debug)
+parallel.waitForAny(save, drawData, drawBlocks, checkClicks, checkKeys, coolName, addPlayers, checkModem, doEnd, debug)
+
+shell.run("invman.lua")
