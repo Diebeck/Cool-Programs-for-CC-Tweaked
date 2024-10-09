@@ -1,3 +1,7 @@
+-- INVMAN v2 Program made by Diebeck
+-- Dont touch my shit unless you know what you're doing!!!
+
+term.setBackgroundColour(colors.black)
 term.clear()
 
 local action = false
@@ -286,6 +290,16 @@ local function getScroll()
     end
 end
 
+--doEnd
+local function doEnd()
+    while true do
+      local _, _, x, y = os.pullEvent("mouse_click")
+      if x == 35 and y == 4 then
+        return nil
+      end
+    end
+  end
+
 --debug
 local function debug()
     while true do
@@ -298,6 +312,8 @@ local function debug()
 
 --draws buttons
 term.setCursorPos(19,4)
-term.blit("M1+-x   C DP LR","000000000000000","7878ffff7f87f87")
+term.blit("M1+-x   C DP LR \18","00000000000000007","7878ffff7f87f87f1")
 
-parallel.waitForAll(drawSlots, checkClicks, drawData, drawInventory, getScroll, debug)
+parallel.waitForAny(drawSlots, checkClicks, drawData, drawInventory, getScroll, doEnd, debug)
+
+shell.run("bstor.lua")
