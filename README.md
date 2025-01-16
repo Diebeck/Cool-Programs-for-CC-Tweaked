@@ -10,19 +10,19 @@ Credit: Wojbies
 
 Mirrors the screen to an attached monitor.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/mirror.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Utility/mirror.lua
 ```
 
 ### Transmitter
 Used with Receiver, transmits commands to a target computer.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/transmitter.lua transmit.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Communication/transmitter.lua transmit.lua
 ```
 
 ### Receiver
 Used with Transmitter, receives commands and runs them. Run on startup.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/receiver.lua startup.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Communication/receiver.lua startup.lua
 ```
 
 ### Simple GPS on Startup
@@ -30,41 +30,41 @@ Used for setting up a GPS system that doesnt need to be reset.
 
 Run "edit startup.lua" and set the x, y, z of the computer.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/simpleGPSonStartup.lua startup.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Utility/simpleGPSonStartup.lua startup.lua
 ```
 
 ### Chatty
 *Requires Adv. Peripherals.* Mirrors the in-game chat into the computer.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/chatty.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Utility/chatty.lua
 ```
 
 ### AI Installer
 Installs AIlink.lua, a program that listens to a pastebin page (https://pastebin.com/XDXyGBBW) and runs any commands on it, so that remote connection is possible. Could be repurposed, but I don't care that much.
 ```
-wget run https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/AIinstaller.lua
+wget run https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Communication/AIinstaller.lua
 ```
 
 ### BSTOR
 A very versatile program for turtles to explore and interact with the world remotely.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/bstor.lua bstor.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Turtle/bstor.lua bstor.lua
 ```
 
 ### INVMAN
 A very useful program for turtles to manage their inventory and other attached inventories remotely.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/invman.lua invman.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Turtle/invman.lua invman.lua
 ```
 
 ### Holoplayer
 Program for pocket computers to broadcast their position at all times. BSTOR makes use of it and displays players near the turtle.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayer.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Turtle/holoplayer.lua
 ```
 
 ### Holoplayer Server
 *Requires Adv. Peripherals.* Utilizes a player detector to get everyone's position, displaying them near the turtle. Privacy is a myth.
 ```
-wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/holoplayerServer.lua
+wget https://raw.githubusercontent.com/Diebeck/Cool-Programs-for-CC-Tweaked/refs/heads/main/Turtle/holoplayerServer.lua
 ```
