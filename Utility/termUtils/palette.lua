@@ -6,7 +6,6 @@ if pick == nil then
     print("- default")
     print("- inverted")
     print("- rgb")
-    print("- modern")
     print("- retro")
     print("- hacker")
     print("- random")

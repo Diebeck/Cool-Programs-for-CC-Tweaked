@@ -83,3 +83,11 @@ wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/head
 ```
 wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Turtle/holoplayerServer.lua
 ```
+
+## Destructive
+
+### Reformat
+Deletes all files, essentially resetting the computer.
+```
+wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Destructive/reformat.lua
+```
