@@ -8,6 +8,6 @@ if read() ~= "y" then return end
 pcall(function()
     local all = fs.list("/")
     for i=1, #all do
-        fs.delete(all[i])
+        fs.delete("/"..all[i])
     end
 end)
