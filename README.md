@@ -5,24 +5,14 @@ Most of these are my creation, only a few are made by other people, given credit
 
 Each file is a program, and should be installed using the guide below. (Some files may need to be installed with different names)
 
+## Utility
+
 ### Mirror
 Credit: Wojbies
 
 Mirrors the screen to an attached monitor.
 ```
 wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Utility/mirror.lua
-```
-
-### Transmitter
-Used with Receiver, transmits commands to a target computer.
-```
-wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Communication/transmitter.lua transmit.lua
-```
-
-### Receiver
-Used with Transmitter, receives commands and runs them. Run on startup.
-```
-wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Communication/receiver.lua startup.lua
 ```
 
 ### Simple GPS on Startup
@@ -39,11 +29,36 @@ wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/head
 wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Utility/chatty.lua
 ```
 
+### Term Utils
+A package that adds some useful programs for the terminal:
+Tree - Graphically displays files inside directories with a tree graph
+Find - Finds files with a specific name
+Palette - Changes the terminal's palette to a few presets
+```
+wget run https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Utility/termUtils/termUtilsInstaller.lua
+```
+
+## Communication
+
+### Transmitter
+Used with Receiver, transmits commands to a target computer.
+```
+wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Communication/transmitter.lua transmit.lua
+```
+
+### Receiver
+Used with Transmitter, receives commands and runs them. Run on startup.
+```
+wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Communication/receiver.lua startup.lua
+```
+
 ### AI Installer
 Installs AIlink.lua, a program that listens to a pastebin page (https://pastebin.com/XDXyGBBW) and runs any commands on it, so that remote connection is possible. Could be repurposed, but I don't care that much.
 ```
 wget run https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Communication/AIinstaller.lua
 ```
+
+## Turtle
 
 ### BSTOR
 A very versatile program for turtles to explore and interact with the world remotely.
