@@ -12,4 +12,4 @@ pcall(function()
             fs.delete(all[i])
         else
     end
-)
+end)
