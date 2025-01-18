@@ -30,10 +30,10 @@ wget https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/head
 ```
 
 ### Term Utils
-A package that adds some useful programs for the terminal:
-Tree - Graphically displays files inside directories with a tree graph
-Find - Finds files with a specific name
-Palette - Changes the terminal's palette to a few presets
+A package that adds some useful programs for the terminal:  
+Tree - Graphically displays files inside directories with a tree graph  
+Find - Finds files with a specific name  
+Palette - Changes the terminal's palette to a few presets  
 ```
 wget run https://raw.githubusercontent.com/Diebeck/CCTweaked-Program-Stash/refs/heads/main/Utility/termUtils/termUtilsInstaller.lua
 ```
