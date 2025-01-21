@@ -1,4 +1,75 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Source Code Pro", serif;
+    font-weight: 600;
+    color: #ededed;
+}
+body{
+    background-color: #111111;
+}
+#mainTitle{
+    padding-top: 50px;
+}
+#searchInput,button{
+    margin-bottom: 15px;
+}
+h1,h2,h3,p{
+    margin-bottom: 5px;
+}
+p,#searchInput{
+    font-size: 15px;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#left,#right{
+    margin: 20px;
+}
+#left{
+    width: 30%;
+}
+#right{
+    width: 60%;
+}
+#searchInput{
+    background-color: #4b4b4b;
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b4b4b;
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #979797;
+}
+#buttons .active {
+    background-color: #3265ca;
+
+}
+.sidebar{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    background-color: #4b4b4b;
+    box-sizing: border-box;
 }

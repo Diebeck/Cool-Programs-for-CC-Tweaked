@@ -5,9 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CC:Tweaked Program Stash</title>
     <link rel="stylesheet" href="website/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <h1>Title</h1>
-    <p>Cool!</p>
+    <h1 align="center" id="mainTitle">CC:Tweaked Program Stash</h1>
+    <div id="main">
+        <div id="left">
+            <input type="text" id="searchInput" placeholder="Search..." oninput="searchPosts()"/>
+
+            <div id="buttons">
+                <!--Begin buttons-->
+                <button id="program1" class="post">
+                    <h1>Program1</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga molestiae repellat placeat deserunt, rem nam tenetur aliquam? Nulla, accusantium atque aspernatur cupiditate, suscipit explicabo doloribus odit cum provident, sequi eligendi.</p>
+                </button>
+
+                <button id="program2" class="post">
+                    <h1>Program2</h1>
+                    <p>Does thing2</p>
+                </button>
+
+                <button id="program3" class="post">
+                    <h1>Program3</h1>
+                    <p>Does thing3</p>
+                </button>
+                <!--End buttons-->
+            </div>
+        </div>
+
+        <div id="right">
+            <div id="docs">
+                <!--Begin documents-->
+                <div id="about" class="sidebar">
+                    <h1>Welcome!</h1>
+                </div>
+
+                <div id="program1DOC" class="sidebar">
+                    About program1
+                </div>
+
+                <div id="program2DOC" class="sidebar">
+                    About program2
+                </div>
+
+                <div id="program3DOC" class="sidebar">
+                    About program3
+                </div>
+                <!--End documents-->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#searchInput").on("input", function () {
+            const query = $(this).val().toLowerCase();
+            
+            $(".post").each(function () {
+                const postText = $(this).text().toLowerCase();
+
+                if (postText.includes(query)) {
+                    $(this).fadeIn("fast");
+                } else {
+                    $(this).fadeOut("fast");
+                }
+            });
+        });
+
+        $(".sidebar").hide()
+        $("#about").show()
+        // Button click handler
+        $("#buttons button").on("click", function () {
+            // Remove "active" class from all buttons
+            $("#buttons button").removeClass("active");
+
+            // Add "active" class to the clicked button
+            $(this).addClass("active");
+
+
+            // Hide all sidebars
+            $(".sidebar").finish();
+            $(".sidebar").slideUp("fast");
+
+            // Show the associated sidebar
+            const sidebarId = "#" + $(this).attr("id") + "DOC";
+            $(sidebarId).slideDown("fast");
+        });
+    </script>
 </body>
 </html>
